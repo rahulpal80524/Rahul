@@ -1,91 +1,67 @@
-body{
-	font-size: 16px;	
-  font-family: 'Exo 2', sans-serif;
+/* dono ko alg alg color diya */
+/* h3{
+	color :orange;
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-  border: 2px solid #000 !important;
+
+p{ 
+	color:red;
 }
-#header-nav{
-  background-color:#999999;  
-  border:2px solid #000; 
-  border-radius: 0;
-}
-.navbar-brand{
-  margin-top: 10px;
-  padding-top:10px;
-}
-.navbar-nav{
-  margin:0 -15px !important;
-}
-.navbar-brand h1{
-  color: #000;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-  margin-left: 15px;
-}
-.navbar-brand a:hover, .navbar-brand a:focus{
-  text-decoration: none;  
-}
-#nav-list{
-  border:1px solid;
-}
-#nav-list:nth-child(3){
-  border-bottom:0;
-}
-#nav-list li{
-  background:#fff;
-  border-bottom:2px solid;
-}
-#nav-list li:nth-child(3){
-  border-bottom:0;
-}
-#nav-list li a{
-  color:#000;
-  font-weight: 600;
-  line-height: 8px
-}
-.menu{
-  margin:15px; 
-}
-.main-title{
-  font-weight: bold;
-  margin-top: -3px;
-}
-.menu-content{ 
-  margin-top:40px;
-}
-.menu-title{
-  font-weight: bold;
-}
-.menu-item{
-  margin-bottom: 20px;
-  background:#999999;  
-  padding: 10px;
-}
-.menu-item h4 {
-  font-weight: bold;
-}
-.menu-item p{
-  font-weight:600;
-  font-size: .9em;
-  padding: 5px 10px;
-}
-@media (max-width:767px){
-  .navbar-brand:focus, .navbar-brand{
-    margin-left:10px;
-  }
-  .menu{
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom: 15px;
-  }
-  .menu-item p{
-    font-weight: 600;
-    font-size: 1em;
-    padding:5px 15px;
-  }
-}
+
+a{ color:black;} */
+
+/* 
+
+
+
+li { 
+     list-style-type: none; #or
+	list-style-type: square;
+} */
+
+
+
+/* class="special" ki help se sabhi tags se color change kiye */
+/* 
+.special {
+	color:blue;
+	font-weight: bold;
+} */
+
+
+/* class="special" ki help se Ak  ya do tags se color change kiye baki me koi change nhii ho */
+/* span.special,
+li.special { color:orange;
+font-weight:bold;} */
+
+
+
+/* 
+li em {color:purple;
+font-weight: bold;} */
+
+
+/* h1 se just bad vale p tag pr hi work krega use bich me agr koi tag aa gya to ye work nhi krega */
+/* h1+p {font-size: 200%;} */
+
+
+/*pseudo-class selectors  */
+/* 
+a:hover { color:saddlebrown;
+text-decoration:none;} */
+
+
+
+/* 
+body h1+p .special{ color:yellow;
+background-color: black;} */
+
+
+/* id selectors */
+/* 
+#heading { color:blue;
+background-color:rebeccapurple;} */
+
+
+/* id selectors with the help of #*/
+/* p#one { 
+	color:red;} */

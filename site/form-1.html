@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form 1</title>
+</head>
+<body style="background-color: rgb(240, 248, 255);">
+	<style type="text/css">
+
+		table,th,td{
+			
+			margin-left: 350px;
+border: 5px solid gainsboro;
+border-collapse: collapse;
+background-color: aqua;
+  }
+
+.form{
+
+	width: 80%;
+}
+
+table{
+	width: 60%;
+}
+#button,#Reset,#Submit{
+	margin-left: 40px;
+	height: 45px;
+	width: 150px;
+	background-color: lightgreen;
+}
+
+#Age{
+	margin-left: 10px;
+	height: 25px;
+	width: 90px;
+	background-color: lightgreen;
+}
+#choosefile{
+margin-left: 170px;
+	height: 35px;
+	width: 90px;
+		
+}
+#file{
+border: none; 
+background-color: lightgreen; 
+height:30px; 
+width: 130px;  
+font-size: 15px; 
+}
+#text,#password,#address{
+background-color: lightgreen;	
+}
+
+	</style>
+
+<div class="form">
+	<table>
+		<tr>
+			<td colspan="2" style="background-color: #FFFF99; margin-top: 0px;  flex-basis: initial; height: 30px; font-size: 20px; text-align: center; font-size: 30px; color: red;">User Form</td></tr>
+		<tr>
+			<th height="50px">Enter Name</th>
+		<td style="text-align: center;"><input type="text" name="Name" id="text"></td>
+		</tr>
+		<tr>
+			<th height="50px">Enter Password</th>
+		<td style="text-align: center;"><input type="password" name="Name" id="password"></td>
+		</tr>
+		<tr>
+			
+			<th height="50px">Enter Address</th>
+		<td><textarea  style="  height: 15px; margin-left:20px ;" cols="40px " rows="50px " value="address" id="address"></textarea>
+		</td>
+		</tr>
+
+		<tr>
+			<th height="50px">Select Game</th>
+		<td><input type="checkbox" name="Hockey" id="Hockey" value="Game">
+			<label>Hockey</label>
+		<br>
+		<input type="checkbox" name="Football" id="Football" value="Game">
+			<label>Football</label>
+		<br>
+		<input type="checkbox" name="Badminton" id="Badminton" value="Game">
+			<label>Badminton</label>
+		<br>
+		<input type="checkbox" name="Cricket" id="Cricket" value="Game">
+			<label>Cricket</label>
+		<br>
+		<input type="checkbox" name="Volleyball" id="Volleyball" value="Game">
+			<label>Volleyball</label>
+		</td><br>
+		</tr>
+<tr>
+			<th height="50px">Gender</th>
+		<td>
+			<input type="radio" id="Male" name="gender" value="Make" >
+<label>Male</label>
+<input type="radio" id="Female" name="gender" value="Female">
+<label>Female</label><br></td>
+		</tr>
+<tr>
+			<th style="height: 30px;">Select your age</th>
+		<td style="height: 20px">
+			<select id="Age">
+			<option value="Age" >Your age</option>
+			<option value="18-21">18-21</option>
+			<option value="22-25">22-25</option>
+			<option value="26-30">26-30</option>
+		</select>
+	</td>
+		</tr>
+<tr>
+			
+		<td colspan="2" style="height: 50px;  " ><button type="button" id="choosefile"> Choose file</button>
+	<input type="text" name="text"  id="file" value="No File Choosen" >
+		</td>
+
+		</tr>
+		<tr>
+			
+		<td  colspan="2" style="height: 60px;">
+		<button type="button"  id="button">Click Me</button>
+		
+	<button type="Reset"   id="Reset">Reset</button>
+		
+		<button type="Submit"  id="Submit"> Submit</button>
+		</td>
+
+		</tr>
+
+	</table>
+	
+</div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+/* li[class] {
+   
+    font-size: 300%;
+} */
+
+
+/* 
+li[class="a"]{
+    color:yellow;
+} */
+
+
+/* a class color  change krega jese a or a b ko pr ye ab ko select nhi krega */
+/* li[class~="a"]{
+    color:red;
+
+} */
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <style>
+        .container{
+            display : grid;
+            /* grid-template-columns: 200px ; */
+            /* grid-template-columns: 1fr 1fr 1fr;     1fr 2fr 1fr puri screen tin part me divi hogi jisme tino ki Equal width hogi tino ki alg alg width change kr skte he 1 ki jagah 2 3 4 */
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap: 20px;
+              /* grid-template-columns:repeat(5,1fr) ; */
+              /* grid-auto-rows: 100px; sabhi box ki size auto rhti he content ya text ke hisab se pr agr khud size dena chahte he to ye use kr skte he ise box ki width de skte he  */
+
+              /* grid-auto-rows:500px ; same ise height change hogi */
+              grid-auto-rows: minmax(100px,auto); 
+              grid-auto-columns: minmax(50px,auto);
+              /* min 100 rhegi or max content se hisab se rhegi */
+              /* column-gap: 20px; column ke bich gap ke liye  */
+              /* row-gap: 30px; */
+            
+        }
+        .items{
+            background-color : green;
+            border-radius : 3px;
+            border : 3px solid black;
+            
+        }
+        /* #items-2 {
+        grid-row-start: 2;
+        grid-row-end :3;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        } */
+
+        #items-1 {
+            grid-column-start: 1;
+            grid-column-end :5;
+        }
+ 
+       /* .items-1-container{
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+
+       }
+       .nested-item{
+           border: 1px solid yellow;
+           background-color : blue;
+           grid-gap: 10px;
+
+       } */
+
+    </style>
+</head>
+<body>
+ <div class="container">
+     <div class="items items-1-container" id="items-1">
+         <div class="nested-item">dabbe mai dabba 1</div>
+         <div class="nested-item">dabbe mai dabba 2</div>
+         <div class="nested-item">dabbe mai dabba 3</div>
+     </div>
+     <div class="items" id="items-2">Dabaa 2</div>
+     <div class="items">Dabaa 3</div>
+     <div class="items">Dabaa 4</div>
+     <div class="items">Dabaa 5</div>
+ </div>
+</body>
+</html>
