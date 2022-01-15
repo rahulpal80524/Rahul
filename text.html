@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Text</title>
+    <style>
+        #sp{
+            color :red;
+            line-height: 2; /*line se bich ki gap ke liye*/
+            font-weight: 800; /*word kitna bolde ya light rkhna he*/  
+            text-indent: 100px; /*line ke starting me kitna space dena he */
+            word-spacing: 3; /*word se bich ka gap km ya jada krne le liye*/
+        }
+
+        h1{
+         text-transform: uppercase;  
+         text-decoration: line-through; 
+         text-shadow: 1px 1px 2px black;
+         text-align: center; /*left ya right ya center me text ko krne ke liye*/
+          
+        }
+
+        /* shorthand  sb ak sath use kr krna*/
+        p {
+            background : #000 url(bg.jpg) no-repeat left top;
+        }
+
+        body{
+            text-align: courier;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The Night King</h1>
+    <p id="sp">Lorem ipsum dolor sit amet, consect</p>
+    <p>Lorem ipsum <mark>dolor</mark> sit, amet consectetur adipisicing elit. Veritatis perspiciatis sequi voluptatibus, assumenda beatae alias dolores omnis qui accusamus officiis dolorum est, inventore, sint iusto nisi eligendi eum ipsum repellat?</p>
+    <!-- pre  tag line ya sentence vese hi show krta he jesa apne likha he -->
+    <pre>My Bonnie lies over the ocean.
+
+        My Bonnie lies over the <q>sea</q>q>.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.</pre>
+
+        <p style="font-size: 50px;">thia lies over <strong>the</strong> <em>water</em> sea</p>
+        <p>My favorite color is <del>blue</del>red.</p>
+        <blockquote  cite="http://www.worldwildlife.org/who/index.html">
+           
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquoteuo>
+<hr>
+            <bdo dir="ltr">what is beautiful day!</bdo>
+
+            <p>
+                The <abbr title="World Health Organization"> WHO</abbr>was founded in 1948.
+                </p>
+    </body>
+</html>
