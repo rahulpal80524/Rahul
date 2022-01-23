@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <style>
+        th {
+            border: solid 1px;
+        }
+
+         table {
+             border: solid 3px;
+         }
+
+         td{
+             border: solid 1px;
+         }
+     </style>  
+   <script>
+        
+
+var bottul = [
+    {height:500,width:200,color:"red"},
+    {height:520,width:300,color:"green"},
+    {height:200,width:500,color:"Yellow"},
+    {height:500,width:600,color:"black"},
+    {height:500,width:700,color:"white"},
+    {height:400,width:230,color:"pink"},
+    {height:510,width:270,color:"gray"}
+
+]
+
+
+// console.log("final legnth",bottul.length);
+// var str = JSON.stringify(bottul[0]);
+// console.log("res",bottul[0]["color"]);
+
+// console.log("final result",str);
+ var chioce = prompt("Enter bottale color:");        
+$(document).ready(function(){
+    for(let i=0;i<bottul.length;i++){
+    // console.log("ind",[i],"loop",bottul[i]["color"]);
+    // var str = bottul[i]["color"];
+    $("#width").append(bottul[i]["width"],"</br>");
+    $("#height").append(bottul[i]["height"],"</br>");
+    $("#color").append(bottul[i]["color"],"</br>");
+
+   for(let i=0;i<bottul.length;i++){
+     if(choice==bottul[i].color){
+      $("#choice").append(bottul[i].color,"</br>");
+       document.body.innerHTML = choice;
+       break;
+    }
+   }
+
+}
+
+switch(chioce){
+    case 'red':
+    $("#choice").append("you color is available ",bottul[0]["color"],"</br>");
+     break;
+    case 'green':
+    $("#choice").append("you color is available ",bottul[1]["color"],"</br>");
+    break;
+    case 'yellow':
+    $("#choice").append("you color is available ",bottul[2]["color"],"</br>");
+    break;
+    case 'black':
+    $("#choice").append("you color is available ",bottul[3]["color"],"</br>");
+    break;
+    case 'white':
+    $("#choice").append("you color is available ",bottul[4]["color"],"</br>");
+    break;
+    case 'pink':
+    $("#choice").append("you color is available ",bottul[5]["color"],"</br>");
+    break;
+    case 'gray': 
+    $("#choice").append("you color is available ",bottul[6]["color"],"</br>");   
+     break;    
+    default:
+      $("#choice").append("You choice is not available");
+
+}
+
+
+    
+    
+})
+
+   </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>height</th>
+                <th>width</th>
+                <th>color</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="height"></td>
+                <td id="width"></td>
+                <td id="color"></td>
+            </tr>
+        </tbody>
+    </table>     
+    </div>
+
+    <h1 id="choice"></h1>
+    
+</body>
+</html>
